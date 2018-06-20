@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         MobileAds.initialize(this,
-                "ca-app-pub-3940256099942544~3347511713");
+                "ca-app-pub-9268401392658071~6252691620");
 
         vGasolina = findViewById(R.id.et_vGasolina);
         vAlcool = findViewById(R.id.et_vAlcool);

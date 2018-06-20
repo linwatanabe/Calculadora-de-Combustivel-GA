@@ -30,7 +30,7 @@ public class ResultadoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultado);
         MobileAds.initialize(this,
-                "ca-app-pub-3940256099942544~3347511713");
+                "ca-app-pub-9268401392658071~6252691620");
 
         vGasolina = findViewById(R.id.tv_vGasolina);
         vAlcool = findViewById(R.id.tv_vAlcool);
@@ -41,7 +41,7 @@ public class ResultadoActivity extends AppCompatActivity {
         mAdView.loadAd(adRequestBanner);
 
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        mInterstitialAd.setAdUnitId("ca-app-pub-9268401392658071/2919685343");
         AdRequest adRequestInterstitial = new AdRequest.Builder().build();
         mInterstitialAd.loadAd(adRequestInterstitial);
 
