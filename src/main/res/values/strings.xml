@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">CalculadoraDeCombustivelGa</string>
+    <string name="app_name">Calculadora de Combustivel GA</string>
+    <string name="calcular">Calcular</string>
+    <string name="texto_intro">Coloque os preços e descubra qual combustivel vale mais a pena</string>
 </resources>

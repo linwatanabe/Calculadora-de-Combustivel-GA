@@ -5,8 +5,10 @@
     <color name="colorAccent">#FFA000</color>
     <color name="colorWhite">#FFF</color>
     <color name="colorBlack">#000</color>
-    <color name="colorBackground">#212121</color>
-    <color name="colorGray">#BDBDBD</color>
-    <color name="colorGasolina">#E00000</color>
-    <color name="colorAlcool">#64DD17</color>
+    <color name="colorWhiteOpacity50">#80FFFFFF</color>
+    <color name="colorDarkGray1">#333333</color>
+    <color name="colorDarkGray2">#1A1A1A</color>
+    <color name="colorSoftGray">#BDBDBD</color>
+    <color name="colorGasolina">#FF3149</color>
+    <color name="colorAlcool">#19FF69</color>
 </resources>
