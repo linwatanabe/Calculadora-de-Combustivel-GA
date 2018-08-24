@@ -5,150 +5,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_gradient"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <android.support.constraint.Guideline
-        android:id="@+id/gl_v10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent=".1" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/gl_v50"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent=".5" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/gl_v90"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent=".9" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/gl_h20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent=".25" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/gl_h50"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent=".5" />
-
-    <ImageView
-        android:id="@+id/bg_pattern"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:contentDescription="background pattern"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bg_pattern" />
-
-    <TextView
-        android:id="@+id/tv_intro"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="@string/texto_intro"
-        android:textAlignment="center"
-        android:textColor="@color/colorWhite"
-        android:textSize="14sp"
-        app:fontFamily="monospace"
-        app:layout_constraintBottom_toTopOf="@+id/gl_h20"
-        app:layout_constraintEnd_toStartOf="@+id/gl_v90"
-        app:layout_constraintStart_toEndOf="@+id/gl_v10"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/et_vGasolina"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/colorGasolina"
-        android:ems="10"
-        android:hint="0.00"
-        android:imeOptions="actionNext"
-        android:inputType="numberDecimal"
-        android:paddingBottom="10dp"
-        android:paddingRight="100dp"
-        android:paddingTop="10dp"
-        android:textAlignment="textEnd"
-        android:textColor="@color/colorWhite"
-        android:textColorHint="@color/colorWhite"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/gl_h20" />
-
-    <ImageView
-        android:id="@+id/bg_gasolina"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:contentDescription="background gasolina"
-        android:scaleType="fitStart"
-        app:layout_constraintEnd_toStartOf="@+id/gl_v50"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/et_vGasolina"
-        app:srcCompat="@drawable/bg_gasolina" />
-
-    <EditText
-        android:id="@+id/et_vAlcool"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:background="@color/colorAlcool"
-        android:ems="10"
-        android:hint="0.00"
-        android:imeOptions="actionDone"
-        android:inputType="numberDecimal"
-        android:paddingBottom="10dp"
-        android:paddingRight="100dp"
-        android:paddingTop="10dp"
-        android:textAlignment="textEnd"
-        android:textColor="@color/colorDarkGray1"
-        android:textColorHint="@color/colorDarkGray1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bg_gasolina" />
-
-    <ImageView
-        android:id="@+id/bg_alcool"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:contentDescription="background alcool"
-        android:scaleType="fitStart"
-        app:layout_constraintEnd_toStartOf="@+id/gl_v50"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/et_vAlcool"
-        app:srcCompat="@drawable/bg_alcool" />
+    tools:context="MainActivity">
 
     <Button
-        android:id="@+id/bt_calcular"
+        android:id="@+id/bt_simples"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="@color/colorPrimary"
-        android:onClick="calcular"
-        android:text="@string/calcular"
-        android:textColor="@color/colorWhite"
-        app:layout_constraintEnd_toStartOf="@+id/gl_v90"
-        app:layout_constraintStart_toEndOf="@+id/gl_v10"
-        app:layout_constraintTop_toBottomOf="@+id/bg_alcool" />
+        android:layout_marginTop="64dp"
+        android:background="@color/colorWhite"
+        android:drawableLeft="@drawable/ic_calculadora"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:onClick="abrirSimples"
+        android:paddingLeft="16dp"
+        android:text="CÁLCULO SIMPLES"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorDarkGray1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_avancado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorWhite"
+        android:drawableLeft="@drawable/ic_calculadora"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:onClick="abrirAvancado"
+        android:paddingLeft="16dp"
+        android:text="CÁLCULO AVANÇADO"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorDarkGray1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_simples" />
+
+    <Button
+        android:id="@+id/bt_extras"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorWhite"
+        android:drawableLeft="@drawable/ic_extras"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:onClick="abrirExtras"
+        android:paddingLeft="16dp"
+        android:text="EXTRAS"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorDarkGray1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_avancado" />
 
     <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
@@ -156,11 +69,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-9268401392658071/8304139893"
+        ads:adSize="MEDIUM_RECTANGLE"
+        ads:adUnitId="ca-app-pub-9268401392658071/2018327328"
         ads:layout_constraintBottom_toBottomOf="parent"
         ads:layout_constraintEnd_toEndOf="parent"
-        ads:layout_constraintStart_toStartOf="parent">
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/bt_extras">
 
     </com.google.android.gms.ads.AdView>
 

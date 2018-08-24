@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
+    tools:context=".AvancadoActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_voltar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:onClick="voltar"
+                app:backgroundTint="@color/colorSecondary"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_arrow_back_24dp" />
+
+            <TextView
+                android:id="@+id/tv_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="24dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="24dp"
+                android:text="@string/intro_avancado"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                app:fontFamily="@font/ubuntu" />
+
+            <TextView
+                android:id="@+id/pGasolina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:text="Gasolina"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                app:fontFamily="@font/ubuntu_bold" />
+
+            <EditText
+                android:id="@+id/et_gasolina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:digits="1234567890,"
+                android:drawableLeft="@drawable/ic_gasolina"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="@font/ubuntu"
+                android:hint="Preço da gasolina"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="15dp" />
+
+            <EditText
+                android:id="@+id/et_consumoG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:digits="1234567890,"
+                android:drawableLeft="@drawable/ic_consumo"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="@font/ubuntu"
+                android:hint="Consumo com gasolina"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="15dp" />
+
+            <TextView
+                android:id="@+id/pAlcool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:text="Álcool"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                app:fontFamily="@font/ubuntu_bold" />
+
+            <EditText
+                android:id="@+id/et_alcool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:digits="1234567890,"
+                android:drawableLeft="@drawable/ic_alcool"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="@font/ubuntu"
+                android:hint="Preço do álcool"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="15dp" />
+
+            <EditText
+                android:id="@+id/et_consumoA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:digits="1234567890,"
+                android:drawableLeft="@drawable/ic_consumo"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="@font/ubuntu"
+                android:hint="Preço do álcool"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="15dp" />
+
+            <Button
+                android:id="@+id/bt_calcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/bt_custom"
+                android:fontFamily="@font/ubuntu_medium"
+                android:onClick="calcular"
+                android:text="@string/calcular"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-9268401392658071/8304139893"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </com.google.android.gms.ads.AdView>
+
+</android.support.constraint.ConstraintLayout>

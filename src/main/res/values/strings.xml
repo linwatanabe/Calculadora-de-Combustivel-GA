@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">Calculadora de Combustivel GA</string>
     <string name="calcular">Calcular</string>
-    <string name="texto_intro">Coloque os preços e descubra qual combustivel vale mais a pena</string>
+    <string name="intro_simples">Digite os preços e descubra qual combustivel vale mais a pena</string>
+    <string name="intro_avancado">Digite o preço e o consumo e descubra qual combustivel vale mais a pena</string>
+    <string name="extra_simples">ENTENDA O CÁLCULO SIMPLES:\n
+        O cálculo simples não leva em conta o consumo do seu combustível.\n
+        O álcool tem uma queda de rendimento de aproximadamente 30% em relação à gasolina.\n
+        Ex.: Multiplicamos o preço da gasolina por 0,7.\n
+        Se o valor for abaixo de 70%, vale mais a pena abastecer com álcool e se o resultado for acima de 70%.</string>
+    <string name="extra_avancado">ENTENDA O CÁLCULO AVANÇADO:\n
+        O cálculo avançado leva em conta o consumo médio do seu combustível.\n
+        Ex.: Dividimos o preço do combustível pelo consumo médio do seu carro para saber quanto custa o quilômetro rodado.\n
+        Depois multiplicamos por 100 para descobrir qual combustível é mais barato a cada 100km rodados.</string>
 </resources>
